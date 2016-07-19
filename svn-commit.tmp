@@ -1,0 +1,8 @@
+
+--This line, and those below, will be ignored--
+
+M    app/Console/Kernel.php
+M    app/Http/Controllers/AdManager/AdMediaController.php
+M    app/Http/routes.php
+M    app/Repositories/FbAdmedia/FbAdMediaRepository.php
+M    app/models/FbAd/AdMedia.php

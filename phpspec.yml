@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: Allison
+        psr4_prefix: Allison
+        src_path: app

@@ -1,0 +1,141 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 23, 2016, 9:56:34 AM
+    Author     : Efutures
+*/
+
+.disabled{
+    color:#ccc !important;
+    cursor: not-allowed;
+}
+
+ th{
+     cursor: pointer !important;
+ }
+.arrow-up{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid black;
+    display: inline-block;
+}
+.arrow-down{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid black;
+    display: inline-block;
+}
+
+.select2{
+    width: 100% !important;
+}
+
+.media-file-label{
+    color:#00a65a;
+}
+
+#select-links-placeholder{
+    width:35%;
+    height: auto;
+    /*border:1px solid black;*/
+    float: left;
+}
+
+.ad_creative_froms{}
+
+#adcreative-linkad-placeholder{
+    width:65%;
+    height: auto;
+    /*border:1px solid black;*/
+    float:left;
+}
+
+.img-library {
+    background: #f7f7f7;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.img-library > li {
+    display: inline-block;
+    zoom:1;
+    *display:inline;
+    /* this fix is needed for IE7- */
+    margin: 5px;
+}
+
+.img-library > li > a{
+    color: #666666;
+    text-decoration: none;
+    padding: 3px 8px;
+}
+
+.img-library > li > a:hover{
+    color: black;
+}
+
+.wizard-panels{
+    /*display: none;*/
+}
+
+.wizard-nav{
+    width: 100%;
+    height:auto;
+    /*border: 1px dotted #000;*/
+    margin-bottom: 5px;
+}
+
+.wizard-nav #wz-next{
+    float:right;
+}
+
+.wizard-nav #wz-prev{
+    float:left;
+}
+
+.ul-wz-steps{
+    background: #ffffff;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 0;
+    color: #ccc;
+}
+
+.ul-wz-steps > li {
+    display: inline-block;
+    zoom:1;
+    *display:inline;
+    /* this fix is needed for IE7- */
+    margin: 0px;
+    font-size: 1.0em;
+
+    padding:5px;
+    /*border:1px solid #ccc;*/
+    /*border-radius: 5px;*/
+    width:12%;
+    text-align: center;
+
+
+}
+
+.ul-wz-steps > li > a{
+
+    text-decoration: none;
+    /*padding: 3px 3px;*/
+    color:#f1f1f1;
+}
+
+.wz-progress-cur{
+    color:#008d4c;
+    font-weight: bolder;
+    /*background: #008d4c;*/
+    /*border:1px solid #000;*/
+
+}
