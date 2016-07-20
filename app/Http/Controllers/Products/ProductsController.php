@@ -107,7 +107,8 @@ class ProductsController extends Controller
 
         //var_dump(Input::all());exit;
 
-        //var_dump($file);exit;
+        $file_original_name = Input::file('media_file')->getClientOriginalName();
+        $file_original_extension = Input::file('media_file')->getClientOriginalExtension();
 
         if(ProductsMedia::validate($file)->fails()){
 
@@ -152,9 +153,9 @@ class ProductsController extends Controller
 
                     $media = new ProductsMedia();
                     $media->product_id = 1;
-                    $media->original_file_name = $file->getClientOriginalName();
+                    $media->original_file_name = $file_original_name;
                     $media->media_file = $fileName;
-                    $media->media_extension = $file->getClientOriginalExtension();
+                    $media->media_extension = $file_original_extension;
                     $media->size = $file_size;
 
                     $media->type = 'image';
