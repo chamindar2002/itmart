@@ -56,6 +56,9 @@ Route::group(['middleware' => ['auth']], function()
    Route::get('/company/create', array('uses' => 'Company\CompanyController@create'));
    Route::post('/company/store', array('uses' => 'Company\CompanyController@store'));
 
+   Route::get('/media/create', array('uses' => 'Products\ProductsController@create'));
+   Route::post('/media/upload', array('uses' => 'Products\ProductsController@upload'));
+
 
 });
 

@@ -302,3 +302,20 @@ SET FOREIGN_KEY_CHECKS=1;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+DROP TABLE IF EXISTS `fb_ad_media`;
+CREATE TABLE IF NOT EXISTS `fb_ad_media` (
+  `id` int(10) unsigned NOT NULL,
+  `product_id` int(10) unsigned NOT NULL,
+  `media_file` varchar(255) COLLATE utf8_unicode_ci NOT NULL COMMENT 'file name',
+  `original_file_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL COMMENT 'original_file name',
+  `media_extension` varchar(100) COLLATE utf8_unicode_ci NOT NULL COMMENT '.jpg, .gif, etc',
+  `video_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `type` enum('image','video') COLLATE utf8_unicode_ci NOT NULL,
+  `size` varchar(50) COLLATE utf8_unicode_ci NOT NULL COMMENT 'file size',
+  `url` text COLLATE utf8_unicode_ci NOT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `status` varchar(20) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
